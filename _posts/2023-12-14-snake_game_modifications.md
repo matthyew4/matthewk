@@ -48,6 +48,11 @@ courses: { compsci: {week: 3} }
 
     #menu{
         display: block;
+          background-color: purple; /* Set the background color to a desired color */
+        font-family: 'Times New Roman', sans-serif; /* Change the font family to a desired font */
+        font-size: 24px; /* Set the font size */
+        color: red; /* Set the font color to white or a contrasting color */
+        padding: 20px; /* Add padding for better spacing */
     }
 
     #gameover{
@@ -332,7 +337,7 @@ courses: { compsci: {week: 3} }
         /* Dot for Food or Snake part */
         /////////////////////////////////////////////////////////////
         let activeDot = function(x, y){
-            ctx.fillStyle = "#FFFFFF";
+            ctx.fillStyle = "orange";
             ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
         }
         /* Random food placement */
@@ -367,8 +372,8 @@ courses: { compsci: {week: 3} }
         /////////////////////////////////////////////////////////////
         let setWall = function(wall_value){
             wall = wall_value;
-            if(wall === 0){screen_snake.style.borderColor = "#606060";}
-            if(wall === 1){screen_snake.style.borderColor = "#FFFFFF";}
+            if(wall === 0){screen_snake.style.borderColor = "blue";}
+            if(wall === 1){screen_snake.style.borderColor = "blue";}
         }
     })();
 </script>
